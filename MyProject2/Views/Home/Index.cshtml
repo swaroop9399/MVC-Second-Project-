@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Register</h1>
+<div class="first">
+    <form asp-action="Insert" method="post">
+
+        <label for="LastName">LastName</label><br>
+        <input type="text" placeholder="LastName" name="LastName">
+        <br>
+        <br>
+
+        <label for="FirstName">FirstName</label><br>
+        <input type="text" placeholder="FirstName" name="FirstName">
+        <br>
+        <br>
+
+        <label for="Address">Address</label><br>
+        <input type="text" placeholder="Address" name="Address">
+        <br><br>
+
+        <label for="City">City</label><br>
+        <input type="text" placeholder="City" name="City">
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</div>

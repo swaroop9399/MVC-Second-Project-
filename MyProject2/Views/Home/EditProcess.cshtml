@@ -1,0 +1,31 @@
+﻿@model User2
+@{
+    ViewData["Title"] = "Update";
+}
+<h1>Update</h1>
+<div class="first">
+    <form asp-action="Update" method="post">
+
+        <input type="text" placeholder="PersonID" name="PersonID" value="@Model.PersonID" hidden>
+
+        <label for="LastName">LastName</label><br>
+        <input type="text" placeholder="LastName" name="LastName" value="@Model.LastName">
+        <br>
+        <br>
+
+        <label for="FirstName">FirstName</label><br>
+        <input type="text" placeholder="FirstName" name="FirstName" value="@Model.FirstName">
+        <br>
+        <br>
+
+        <label for="Address">Address</label><br>
+        <input type="text" placeholder="Address" name="Address" value="@Model.Address">
+        <br><br>
+        
+        <label for="City">City</label><br>
+        <input type="text" placeholder="City" name="City" value="@Model.City">
+        <br><br>
+
+        <button type="submit">Update</button>
+    </form>
+</div>
